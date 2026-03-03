@@ -18,7 +18,7 @@ Step 2: Create a Sales by Region Chart
 ○ Sales → Values
                   Question:
                   ● Which region has highest sales?
-                  ANSWER: WEST
+                  ANSWER: West Region
 
 
 Step 3: Sales by Category
@@ -30,7 +30,8 @@ Step 3: Sales by Category
                   ● Which category dominates?
                   ANSWER: ELECTRONICS
                   ● Is the distribution balanced?
-                  ANSWER: NO
+                  ANSWER: Mostly yes, but North underperforms compared to others.
+
 
 
 Step 4: Sales Over Time
@@ -40,56 +41,64 @@ Step 4: Sales Over Time
 ○ Sales → Values
                   Question:
                   ● Is there growth?
-                  ANSWER: NO
+                  ANSWER:Nope, the sales go down
                   ● Any noticeable trend?
-                  ANSWER: NO
+                  ANSWER: Nope
+
 
 
 PART 4: Basic Data Insight Interpretation
 Students must now interpret visuals.
                   Question:
                   ● Which region contributes most revenue?
-                  ANSWER: WEST
+                      ANSWER: West Region 
+                      
                   ● Which product category performs best?
-                  ANSWER: ELECTRONICS
+                      ANSWER: Electronics
+                      
                   ● Are sales consistent across dates?
-                  ANSWER: YES
-                  ● What business recommendation can you suggest?
-                  ANSWER: OFFICE SUPPLIES
+                     ANSWER:Mostly yes, but North underperforms compared to others. 
+                     
+                 ● What business recommendation can you suggest?
+                    ANSWER: Office Supplies
+
 
 
 LABORATORY QUESTIONS
 Part A – Technical Questions
+
 1. What are the five columns in the dataset?
-ANSWER: DATE, PRODUCT, CATEGORY, REGION AND SALES
+       - Date, Product, Category, Region, Sales
+   
+3. What data type is assigned to the “Sales” column?
+        - Decimal Number. It stores continuous numerical values representing revenue amounts.
 
-2. What data type is assigned to the “Sales” column?
-ANSWER: DECIMAL NUMBER
+5. Which Power BI view allows you to see raw data?
+       - Data View - the table icon on the left-side navigation bar. It shows every row and column in the loaded dataset.
+   
+7. What chart type is best for showing trends over time?
+       - Line Chart. It maps a continuous axis (Date/Time) on the X-axis, making patterns such as growth or decline immediately visible.
+   
+9. What aggregation is automatically applied to Sales?
+       - SUM (Sum of Sales). Power BI defaults to summing numerical fields when they are dragged onto a visual.
 
-3. Which Power BI view allows you to see raw data?
-ANSWER: LINE CHART
-
-4. What chart type is best for showing trends over time?
-ANSWER: LINE CHART
-
-5. What aggregation is automatically applied to Sales?
-ANSWER: SUM
 
 Part B – Analytical Questions
+
 6. Which region has the highest total sales?
-ANSWER: WEST
-
+    - West region. From the sorted bar chart , West has the tallest bar, followed closely by East, then South, with North recording the lowest figures.
+      
 7. Which category has the lowest performance?
-ANSWER: OFFICE SUPPLIES
-
+    - Office Supplies. The pie chart shows it accounts for only 19.99% (~44K) of total sales, compared to Electronics (40.82%, ~90K) and Furniture (39.19%, ~86K).
+      
 8. Are sales increasing, decreasing, or stable?
-ANSWER: DECREASING
-
+    - Decreasing over the observed period. The line chart (p. 9) shows a steep downward slope from ~0.2M in 2024 to near zero in 2025, indicating a significant sales drop — likely due to incomplete  2025 data.
+      
 9. If you were a manager, which region would you prioritize?
-ANSWER: NORTH
-
+      - North region should be prioritized for investigation and improvement, as it is the weakest performer. West and East should be studied as best-practice regions to  replicate their success strategies.
+        
 10. Provide one actionable recommendation based on the data.
-ANSWER: Focus resources on the highest-performing segment identified in the data by increasing targeted marketing and promotional efforts there to maximize return on investment and accelerate overall growth.
+     - Reallocate marketing and sales resources from Office Supplies to Electronics and Furniture, which jointly account for ~80% of revenue. In the  North region, deploy a targeted sales   campaign modeled after the West region's approach.
 
 
 Question:
@@ -98,20 +107,30 @@ ANSWER: 220K
 
 Question:
 ● What happens to other visuals when you click a region?
-ANSWER: By default, in most modern business intelligence tools (like Power BI, Tableau, and Looker Studio), clicking a region or data point in one visual cross-filters or cross-highlights other visuals on the same report page. This interaction makes reports dynamic, allowing you to focus on specific data segments. 
+      - All visuals on the page filter to show data  
+         ONLY for the selected region. 
+         
 ● Why is filtering important in BI?
-ANSWER: Filtering is a foundational technique in Business Intelligence (BI) and data analysis that narrows down large, complex datasets to display only the most relevant, actionable information. It acts as a "sieve" or "gatekeeper," essential for transforming raw data into meaningful insights, enhancing, and speeding up decision-making. 
+          - Filtering is important because it: 
+ - Allows users to analyze specific segments of data 
+ - Helps in comparing performance between regions
+
 
 Question:
 ● Does sorting improve readability?
-ANSWER: Yes
+       - Yes 
+       
 ● Why?
-ANSWER: sorting significantly improves readability by transforming chaotic data into a structured format that is easier for the human brain to process, scan, and understand. It reduces the cognitive load on the reader, allowing them to find, compare, and digest information faster. 
+     - sorting dramatically improves readability by pre-attentively ordering information. - It allows immediate identification of best/worst performers without manual comparison. - Sorted charts are also easier to annotate (e.g., 'Top performer: West, +28% above average').
+
 
 Task 4: Identify Outliers
+
 ● Which region is significantly higher or lower?
-ANSWER: THE WEST REGION REGION IS THE HIGHEST-PERFORMING REGION
 ● What might explain that difference?
-ANSWER: STRONGER MARKET DEMAND
+     - North is the clear negative outlier. Based on the sorted bar chart (West → East → South → North),  the North column is noticeably shorter than   the other three, which are relatively close in height.  Possible explanations: fewer sales representatives in the North territory; seasonal demand  differences; product-market mismatch where Electronics (the top category) is less in demand in that  geography; or simply a smaller target customer population. A manager should drill down into North's  product-level data using the Category slicer to isolate whether all categories underperform or just  one.
+ 
+
+
 
 Google Slides Drive Link: https://drive.google.com/drive/folders/1ml-Oe0S6bN9uBdD_cWbosFHgARs46pbm?usp=drive_link
